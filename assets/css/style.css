@@ -1,0 +1,136 @@
+/*GENERAL*/
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Spectral:wght@500&display=swap%22);
+
+body {
+  margin: 0;
+}
+
+.marginLeft {
+  padding-left: 100px;
+}
+
+.marginRight {
+  padding-right: 100px;
+}
+
+.bolad {
+  font-weight: bold;
+}
+/*header*/
+
+header {
+  padding: 1em;
+  background-color: #ffc017;
+  border-bottom: solid 1px black;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  border: none;
+  background: none;
+  padding: 0.75em;
+}
+
+button.getstarted {
+  background-color: black;
+  border-radius: 50px;
+  color: white;
+}
+
+/* 
+cancella la nav, ma non i bottoni
+*/
+@media screen and (max-width: 768px) {
+  .shadowbutton {
+    display: none !important;
+  }
+}
+
+/* secondary nav */
+
+#secondaryNav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+  background-color: #ffc017;
+  border-bottom: solid 1px black;
+}
+
+#secondaryNav > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 300px;
+  min-width: 300px;
+}
+
+#secondaryNav > div > h2 {
+  font-size: 4.5em;
+  margin: 0 0 0.25em 0;
+}
+
+#secondaryNav > div > p {
+  font-size: 1.9em;
+  margin: 0 0 0.5em 0;
+}
+
+#secondaryNav > div > button {
+  width: fit-content;
+  font-size: 1em;
+}
+
+#secondaryNav svg {
+  max-width: 45%;
+  min-width: 30%;
+}
+
+/* card section */
+
+#cardsSection {
+  display: flex;
+  flex-direction: column;
+  border-bottom: solid 1px black;
+}
+
+.cardNav {
+  display: flex;
+  flex-direction: row;
+  margin: 1em 0;
+}
+
+.cardList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.cardItem {
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  margin: 0 1em 1em 0;
+}
+
+.cardNumber {
+  font-size: 1.5em;
+  padding: 0.25em;
+}
+
+.cardData {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardData div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* articles section */

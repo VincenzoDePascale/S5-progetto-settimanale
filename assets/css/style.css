@@ -1,5 +1,5 @@
 /*GENERAL*/
-@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Spectral:wght@500&display=swap%22);
+/* @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Spectral:wght@500&display=swap%22); */
 
 body {
   margin: 0;
@@ -18,7 +18,7 @@ body {
 }
 /*header*/
 
-header {
+#topBar {
   padding: 1em;
   background-color: #ffc017;
   border-bottom: solid 1px black;
@@ -26,6 +26,7 @@ header {
   top: 0;
   width: 100%;
   z-index: 1;
+  transition: 1s;
 }
 
 nav {
@@ -45,9 +46,6 @@ button.getstarted {
   color: white;
 }
 
-/* 
-cancella la nav, ma non i bottoni
-*/
 @media screen and (max-width: 768px) {
   .shadowbutton {
     display: none !important;
@@ -65,7 +63,6 @@ main {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-
   background-color: #ffc017;
   border-bottom: solid 1px black;
 }
@@ -91,6 +88,10 @@ main {
 #secondaryNav > div > button {
   width: fit-content;
   font-size: 1em;
+}
+
+#fatherG > g {
+  transition: 1s;
 }
 
 #secondaryNav svg {
@@ -204,8 +205,6 @@ main {
 }
 
 .imgArticle {
-  display: flex;
-  align-items: center;
   width: 200px;
   height: 175px;
   margin: 1em;

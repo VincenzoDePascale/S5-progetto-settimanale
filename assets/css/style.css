@@ -49,6 +49,7 @@ button {
   border: none;
   background: none;
   padding: 0.75em;
+  transition: 1s;
 }
 
 button.getstarted {
@@ -83,8 +84,8 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 300px;
-  min-width: 300px;
+  min-height: 200px;
+  min-width: 200px;
 }
 
 #secondaryNav > div > h2 {
@@ -103,13 +104,14 @@ main {
   font-size: 1em;
 }
 
-#fatherG > g {
-  transition: 1s;
-}
-
 #secondaryNav svg {
+  position: relative;
   max-width: 45%;
   min-width: 30%;
+}
+
+#fatherG > g {
+  transition: 1s;
 }
 
 @media screen and (max-width: 768px) {
